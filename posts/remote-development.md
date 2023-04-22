@@ -1,6 +1,14 @@
 ---
 layout: main.hbs
 title: Remote Development
+tags:
+  - post
+  - tunnel
+  - ssh
+  - nginx
+  - linux
+  - server
+  - vscode
 ---
 
 ## {{ title }}

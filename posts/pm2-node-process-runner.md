@@ -1,5 +1,13 @@
 ---
+layout: main.hbs
 title: Using PM2 Node Process Manager
+tags:
+  - post
+  - linux
+  - node
+  - pm2
+  - deploy
+  - server
 ---
 
 ## {{ title }}

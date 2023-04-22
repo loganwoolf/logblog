@@ -1,5 +1,10 @@
 ---
+layout: main.hbs
 title: Killing Node Processes in Linux
+tags:
+  - post
+  - linux
+  - node
 ---
 
 ## {{ title }}

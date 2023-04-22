@@ -1,6 +1,10 @@
 ---
 layout: main.hbs
 title: pnpm
+tags:
+  - post
+  - node
+  - pnpm
 ---
 
 ## {{ title }}
