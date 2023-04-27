@@ -1,5 +1,5 @@
 ---
-layout: main.hbs
+layout: main.liquid
 title: Using PM2 Node Process Manager
 tags:
   - post

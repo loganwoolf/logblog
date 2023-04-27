@@ -1,5 +1,5 @@
 ---
-layout: main.hbs
+layout: main.liquid
 title: Remote Development
 tags:
   - post
