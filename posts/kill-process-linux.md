@@ -1,5 +1,5 @@
 ---
-layout: main.hbs
+layout: main.liquid
 title: Killing Node Processes in Linux
 tags:
   - post
