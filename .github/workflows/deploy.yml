@@ -3,20 +3,22 @@ on:
   push:
     branches:
       - master
-    
+
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - name: Pull latest code and build 
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USER }}
-        key: ${{ secrets.SSH_KEY }}
-        script_stop: true
-        script: |
-          cd /var/www/loganwoolf.dev
-          git pull
-          pnpm build
+      - name: Pull latest code and build
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script_stop: true
+          script: |
+            cd /var/www/loganwoolf.dev
+            git pull
+            pnpm install -g pnpm
+            pnpm install
+            pnpm build
