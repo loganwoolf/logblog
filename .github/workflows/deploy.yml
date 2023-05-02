@@ -17,6 +17,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script_stop: true
           script: |
+            exec bash \-l
             cd /var/www/loganwoolf.dev
             git pull
             pnpm install -g pnpm
