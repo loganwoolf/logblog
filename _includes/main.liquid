@@ -24,15 +24,11 @@ site: loganwoolf.dev!
           <a href="/">logan woolf dot dev!</a>
         </h1>
         <ul class="flex items-center gap-4">
-          <li>
-            <a class="text-lg" href="/posts/">Articles</a>
-          </li>
-          <li>
-            <a class="text-lg" href="/projects/">Projects</a>
-          </li>
-          <li>
-            <a class="text-lg" href="/about/">About Me</a>
-          </li>
+          {% for item in menuItems %}
+            <li>
+              <a class="text-lg" href="{{ item.slug }}">{{ item.title }}</a>
+            </li>
+          {% endfor %}
         </ul>
       </nav>
     </header>
