@@ -1,0 +1,13 @@
+---
+layout: main.liquid
+---
+
+<h2 class="text-2xl mb-4">👋 Hello and welcome to my blog.</h2>
+
+<p>
+  This is a collection of helpful articles to quickly solve problems I've spent considerable time on. Lots of this will be related to web development and remote server management.
+</p>
+
+{% for item in collections.all %}
+  {{ item.name }}
+{% endfor %}
