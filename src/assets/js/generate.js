@@ -38,7 +38,10 @@ tags:
 };
 
 const writeFiles = () => {
-  fs.writeFileSync(`./posts/${dashcase(postTitle)}.md`, prepareFileContents());
+  fs.writeFileSync(
+    `./src/posts/${dashcase(postTitle)}.md`,
+    prepareFileContents()
+  );
 };
 
 writeFiles();

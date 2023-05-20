@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Articles",
+    "slug": "/posts/"
+  },
+  {
+    "title": "Projects",
+    "slug": "/projects/"
+  },
+  {
+    "title": "About Me",
+    "slug": "/about/"
+  }
+]

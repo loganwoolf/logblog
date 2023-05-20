@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production tailwindcss -i styles/tailwind.css -c styles/tailwind.config.js -o _site/style.css --minify",
-    "start": "eleventy --serve & tailwindcss -i styles/tailwind.css -c styles/tailwind.config.js -o _site/style.css --watch",
-    "generate": "node assets/js/generate.js",
+    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production tailwindcss -i src/styles/tailwind.css -c src/styles/tailwind.config.js -o _site/style.css --minify",
+    "start": "eleventy --serve & tailwindcss -i src/styles/tailwind.css -c src/styles/tailwind.config.js -o _site/style.css --watch",
+    "generate": "node src/assets/js/generate.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
