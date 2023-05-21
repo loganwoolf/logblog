@@ -21,7 +21,5 @@ jobs:
             source ~/.bashrc
             cd /var/www/loganwoolf.dev
             git pull
-            pnpm install -g pnpm
-            pnpm -v
             pnpm install
             pnpm build
