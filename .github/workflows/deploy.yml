@@ -17,7 +17,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script_stop: true
           script: |
-            export PATH="$PATH:~/.local/share/pnpm:~/.local/share/pnpm/nodejs/18.16.0/bin"
+            source ~/.bashrc
+            export PATH="$PATH:~/.local/share/pnpm"
             cd /var/www/loganwoolf.dev
             git pull
             pnpm install
