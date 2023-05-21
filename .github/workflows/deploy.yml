@@ -17,9 +17,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script_stop: true
           script: |
-            export PATH="$PATH:~/.local/share/pnpm"
+            exec bash \-l
             cd /var/www/loganwoolf.dev
             git pull
-            pnpm env use --global 18
             pnpm install
             pnpm build
