@@ -17,6 +17,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script_stop: true
           script: |
+            export PATH="$PATH:~/.local/share/pnpm"
             source ~/.bashrc
             cd /var/www/loganwoolf.dev
             git pull
