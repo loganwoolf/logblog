@@ -17,15 +17,9 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script_stop: true
           script: |
-            echo 'hello,' $USER '! running script...'
-            echo 'changing directory'
+            export PATH="$PATH:/home/deploy/.local/share/pnpm"
             cd /var/www/loganwoolf.dev
-            echo 'fetching new code'
             git pull
-            echo 'upgrade pnpm'
             pnpm install -g pnpm
-            echo 'install packages'
             pnpm install
-            echo 'build'
             pnpm build
-            echo 'success!'
