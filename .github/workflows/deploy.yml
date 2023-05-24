@@ -20,5 +20,6 @@ jobs:
             export PATH="$PATH:~/.local/share/pnpm"
             cd /var/www/loganwoolf.dev
             git pull
+            pnpm env use --global 18
             pnpm install
             pnpm build
