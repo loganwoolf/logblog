@@ -16,4 +16,10 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script_stop: true
-          script: ~/.deploy-logblog.sh
+          script: |
+            export PATH="$PATH:~/.local/share/pnpm:~/.local/share/pnpm/nodejs_current/bin"
+            export PNPM_HOME="~/.local/share/pnpm"
+            cd /var/www/loganwoolf.dev
+            git pull
+            pnpm install
+            pnpm build
